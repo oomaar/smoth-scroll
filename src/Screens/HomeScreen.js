@@ -1,4 +1,4 @@
-import { Navbar, Sidebar } from '../Components';
+import { Header, Navbar, Sidebar } from '../Components';
 
 const HomeScreen = () => {
 
@@ -6,6 +6,7 @@ const HomeScreen = () => {
         <div>
             <Navbar />
             <Sidebar />
+            <Header />
         </div>
     );
 };
