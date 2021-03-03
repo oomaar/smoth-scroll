@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import { Sidebar } from "..";
 import {
     Container,
     SubContainer,
@@ -13,19 +11,14 @@ import {
     NavBtn,
 } from "./styledNavbar";
 
-const Navbar = () => {
-    const [toggleShow, setToggleShow] = useState(false);
-
-    const handleToggleShow = () => setToggleShow(state => !state);
-
+const Navbar = ({ toggle }) => {
     return (
         <Container>
             <SubContainer>
                 <Logo to="/">dolla</Logo>
 
-                <MobileIcon>
-                    <FaBars onClick={handleToggleShow} />
-                    <Sidebar toggleShow={toggleShow} setToggleShow={setToggleShow} />
+                <MobileIcon onClick={toggle}>
+                    <FaBars />
                 </MobileIcon>
 
                 <NavMenu>
