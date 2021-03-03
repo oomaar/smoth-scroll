@@ -27,7 +27,8 @@ const Header = () => {
                 <Feature>
                     <Title>I'm Name TypeWriter Effect</Title>
                     <SubTitle>
-                        Description: where? who? what? simple effect
+                        Description: where? who? what? simple effect 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     </SubTitle>
 
                     <ButtonWrapper>

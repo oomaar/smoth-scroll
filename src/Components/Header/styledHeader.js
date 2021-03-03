@@ -48,27 +48,26 @@ export const VideoBg = styled.video`
 `;
 
 export const Feature = styled.div`
-    width: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-width: 1200px;
     height: 50%;
+    padding: 8px 24px;
     text-align: center;
+    z-index: 3;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    color: #fff;
-
-    /* z-index: 3;
-    max-width: 1200px;
-    padding: 8px 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; */
 `;
 
 export const Title = styled.h1`
     font-size: clamp(26px, 6vw, 60px);
+    font-weight: 700;
 `;
 
 export const SubTitle = styled.h3`
