@@ -1,4 +1,6 @@
 import { FaBars } from "react-icons/fa";
+import { useDispatch } from "react-redux";
+import { setToggleShow } from "../../features/sidebarSlice";
 import {
     Container,
     SubContainer,
@@ -11,7 +13,11 @@ import {
     NavBtn,
 } from "./styledNavbar";
 
-const Navbar = ({ toggle }) => {
+const Navbar = () => {
+    const dispatch = useDispatch();
+
+    const toggle = () => dispatch(setToggleShow({ vlaue: true }));
+
     return (
         <Container>
             <SubContainer>

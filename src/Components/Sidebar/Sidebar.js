@@ -1,3 +1,5 @@
+import { useDispatch, useSelector } from "react-redux";
+import { selectToggleShow, setToggleShow } from "../../features/sidebarSlice";
 import {
     Container,
     Close,
@@ -9,9 +11,13 @@ import {
     SideBtn,
 } from "./styledSidebar";
 
-const Sidebar = ({ toggleShow, toggle }) => {
+const Sidebar = () => {
+    const selector = useSelector(selectToggleShow);
+    const dispatch = useDispatch();
+    const toggle = () => dispatch(setToggleShow({ vlaue: false }));
+
     return (
-        <Container show={toggleShow}>
+        <Container show={selector}>
             <Icon onClick={toggle}>
                 <Close />
             </Icon>
