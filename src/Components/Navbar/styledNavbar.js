@@ -3,9 +3,9 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 export const Container = styled.nav`
-    background-color: #000;
+    background-color: transparent;
     height: 80px;
-    /* margin-top: -80px; */
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +13,10 @@ export const Container = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
+
+    &.blackNav {
+        background: #000;
+    }
 
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;

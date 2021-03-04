@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { setToggleShow } from "../../features/sidebarSlice";
@@ -14,12 +15,22 @@ import {
 } from "./styledNavbar";
 
 const Navbar = () => {
+    const [show, setShow] = useState(false);
     const dispatch = useDispatch();
 
     const toggle = () => dispatch(setToggleShow({ vlaue: true }));
 
+    const transitionNavbar = () => {
+        window.scrollY > 100 ? setShow(true) : setShow(false);
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", transitionNavbar);
+        return () => window.removeEventListener("scroll", transitionNavbar);
+    }, []);
+
     return (
-        <Container>
+        <Container className={`${show && 'blackNav'}`}>
             <SubContainer>
                 <Logo to="/">dolla</Logo>
 
