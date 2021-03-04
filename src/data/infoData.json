@@ -32,19 +32,22 @@
         "darkText": true
     },
     {
+        "id": "services"
+    },
+    {
         "id": "signup",
         "topLine": "Premium Bank",
         "title": "Unlimted Transactions with zero fees",
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores facere perspiciatis blanditiis repellendus.",
-        "imgStart": false,
-        "img": "/images/svg-3.svg",
+        "imgStart": true,
+        "img": "/images/svg-6.svg",
         "alt": "Star Gaze",
-        "lightBg": false,
-        "lightText": true,
-        "lightTextDesc": true,
+        "lightBg": true,
+        "lightText": false,
+        "lightTextDesc": false,
         "buttonLabel": "Start Now",
-        "dark": true,
-        "primary": true,
-        "darkText": false
+        "dark": false,
+        "primary": false,
+        "darkText": true
     }
 ]

@@ -15,18 +15,19 @@ import {
 } from "./styledInfo";
 
 import infoData from "../../data/infoData.json";
+import { Card } from "..";
 
 const InfoSection = () => {
     return (
         <>
             {infoData.map(item => (
+                item.id !== "services" ? ( 
                 <Container key={item.id} lightBg={item.lightBg} id={item.id}>
                     <SubContainer>
                         <Row imgStart={item.imgStart}>
-
                             <Column>
                                 <TextWrapper>
-                                    <TopLine>{item.topline}</TopLine>
+                                    <TopLine>{item.topLine}</TopLine>
                                     <Title lightText={item.lightText}>{item.title}</Title>
                                     <SubTitle darkText={item.darkText}>{item.description}</SubTitle>
                                     <BtnWrap>
@@ -45,17 +46,19 @@ const InfoSection = () => {
                                     </BtnWrap>
                                 </TextWrapper>
                             </Column>
-
                             <Column2>
                                 <ImgWrap>
                                     <Img src={item.img} alt={item.alt} />
                                 </ImgWrap>
                             </Column2>
-
                         </Row>
                     </SubContainer>
                 </Container>
-            ))}
+            ) : (
+                <Container key={item.id} id={item.id}>
+                    <Card />
+                </Container>
+            )))}
         </>
     );
 };
