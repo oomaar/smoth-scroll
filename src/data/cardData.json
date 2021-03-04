@@ -1,0 +1,23 @@
+[
+  {
+    "id": "card1",
+    "imgURL": "/images/svg-3.svg",
+    "imgAlt": "svg3",
+    "CardTitle": "Title",
+    "CardText": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+  },
+  {
+    "id": "card2",
+    "imgURL": "/images/svg-4.svg",
+    "imgAlt": "svg4",
+    "CardTitle": "Title",
+    "CardText": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+  },
+  {
+    "id": "card3",
+    "imgURL": "/images/svg-5.svg",
+    "imgAlt": "svg5",
+    "CardTitle": "Title",
+    "CardText": "Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+  }
+]
