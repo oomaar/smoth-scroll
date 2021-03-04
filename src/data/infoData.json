@@ -1,0 +1,50 @@
+[
+    {
+        "id": "about",
+        "topLine": "Premium Bank",
+        "title": "Unlimted Transactions with zero fees",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores facere perspiciatis blanditiis repellendus.",
+        "imgStart": false,
+        "img": "/images/svg-1.svg",
+        "alt": "Star Gaze",
+        "lightBg": false,
+        "lightText": true,
+        "lightTextDesc": true,
+        "buttonLabel": "Get Started",
+        "dark": true,
+        "primary": true,
+        "darkText": false
+    },
+    {
+        "id": "discover",
+        "topLine": "Premium Bank",
+        "title": "Unlimted Transactions with zero fees",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores facere perspiciatis blanditiis repellendus.",
+        "imgStart": true,
+        "img": "/images/svg-2.svg",
+        "alt": "Explore Space",
+        "lightBg": true,
+        "lightText": false,
+        "lightTextDesc": false,
+        "buttonLabel": "Learn More",
+        "dark": false,
+        "primary": false,
+        "darkText": true
+    },
+    {
+        "id": "signup",
+        "topLine": "Premium Bank",
+        "title": "Unlimted Transactions with zero fees",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores facere perspiciatis blanditiis repellendus.",
+        "imgStart": false,
+        "img": "/images/svg-3.svg",
+        "alt": "Star Gaze",
+        "lightBg": false,
+        "lightText": true,
+        "lightTextDesc": true,
+        "buttonLabel": "Start Now",
+        "dark": true,
+        "primary": true,
+        "darkText": false
+    }
+]
