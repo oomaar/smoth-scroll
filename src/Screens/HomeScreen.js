@@ -1,12 +1,12 @@
-import { Header, Navbar, Sidebar } from '../Components';
+import { Header, Info, Navbar, Sidebar } from '../Components';
 
 const HomeScreen = () => {
-
     return (
         <div>
             <Navbar />
             <Sidebar />
             <Header />
+            <Info />
         </div>
     );
 };
