@@ -65,6 +65,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
+    padding-bottom: 10px;
     /* margin-right: -22px; */
 
     @media screen and (max-width: 768px) {
@@ -84,9 +85,11 @@ export const NavLink = styled(ScrollLink)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    border-bottom: 3px solid transparent;
 
     &.active {
         border-bottom: 3px solid #01bf71;
+        transition: all 1s ease; 
     }
 `;
 
